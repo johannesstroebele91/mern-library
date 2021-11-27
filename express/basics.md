@@ -9,5 +9,20 @@ Express.js is a framework for Node.js
 
 - managing packages for node.js
 - so adding third-party libaries
-- e.g. npm install express --save
-- (--save for core app dep, --save-dev only development)
+- Examples
+  - e.g. npm install express --save (--save for core app dep)
+  - e.g. npm i nodemon --save-dev (--save-dev for development only)
+
+# Restart server automatically
+
+Nodemon restarts the server automatically
+
+- each time a file changes
+- in the project folder changes
+
+# Scripts
+
+Can be added in the package.json
+
+- The keyword run can be omitted for `npm start` and `npm test`
+- but not for other script names, e.g. `npm run dev`
