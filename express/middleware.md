@@ -1,4 +1,4 @@
-# 1. Basics
+# 1. Middleware in General
 
 Software that
 
@@ -14,22 +14,25 @@ Software that
 
 Ref: https://expressjs.com/en/guide/writing-middleware.html
 
-Middleware functions can perform the following tasks
-
-- during the application’s request-response cycle
-
-1. Gets or edits the request object
-2. Returns or edits the response object
-3. Calls the next succeeding the current middleware in the stack (if next() is called)
-4. Ends the request-response cycle (automatic timeout if next() is not called)
-
 Several route methods derived from HTTP methods can be attached to an instance of the express class (e.g. app) such as:
 
 - app.use(): registers a middleware that runs on all incoming requests
 - app.get(): registers a middleware that runs just for the get requests
 - app.post(): registers a middleware that runs just for the post requests
 
+Middleware functions can perform the following tasks
+
+- during the application’s request-response cycle
+- and are executed when a request reaches the middleware function
+
+1. Gets or edits the request object
+2. Returns or edits the response object
+3. Calls the next succeeding the current middleware in the stack (if next() is called)
+4. Ends the request-response cycle (automatic timeout if next() is not called)
+
 ## Middleware parts explained
+
+Ref: https://expressjs.com/de/guide/using-middleware.html
 
 ![Express middleware example](https://expressjs.com/images/express-mw.png)
 
