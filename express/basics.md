@@ -5,9 +5,9 @@ Express.js is a framework for Node.js
 - it makes ertain things easier
 - like coding everything from scratch (e.g. node.js http example )
 
-# Scripts
+# Middleware and Express
 
-Can be added in the package.json
+In express all requests
 
-- The keyword run can be omitted for `npm start` and `npm test`
-- but not for other script names, e.g. `npm run dev`
+- are funneled through a bunch of middleware functions
+- more is explained in the middleware.md file
