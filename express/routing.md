@@ -8,14 +8,20 @@ Ref: https://expressjs.com/en/guide/routing.html
 Routes can be defined by
 
 - specifying route methods derived from HTTP methods
-- that are called on an instance of the Express object
-- so an instance of the express class (e.g. app)
+- that are called on an instance of the express class (e.g. app)
 
 These routing methods
 
 - specify a callback function (sometimes called “handler functions”)
 - called when the application receives a request
 - to the specified route (endpoint) and HTTP method
+
+# order of routing middlewares
+
+IMPORTANT: the order of middleware functions matter!
+
+- so the more middleware functions with a more general path to the start (e.g. "/user/:uid") and
+- the more specified middleware functions to the END (e.g. "/")
 
 # Examples:
 

@@ -14,12 +14,6 @@ Software that
 
 Ref: https://expressjs.com/en/guide/writing-middleware.html
 
-Several route methods derived from HTTP methods can be attached to an instance of the express class (e.g. app) such as:
-
-- app.use(): registers a middleware that runs on all incoming requests
-- app.get(): registers a middleware that runs just for the get requests
-- app.post(): registers a middleware that runs just for the post requests
-
 Middleware functions can perform the following tasks
 
 - during the application’s request-response cycle

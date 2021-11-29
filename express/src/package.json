@@ -1,11 +1,11 @@
 {
-  "name": "code",
+  "name": "rest-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "start-node": "node index.js",
+    "start": "nodemon app.js",
+    "start-node": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
